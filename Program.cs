@@ -1,6 +1,12 @@
-﻿int[] numbers = [7, 13, 27, 32, 38, 42, 67, 86, 89, 94];
+int[] numbers = new int[10];
 
-Console.WriteLine($"Массив:");
+Random rnd = new Random();
+for (int i = 0; i < numbers.Length; i++)
+{
+    numbers[i] = rnd.Next(1, 101);
+}
+
+Console.WriteLine($"Массив рандомных чисел:");
 for (int i = 0; i < numbers.Length; i++)
 {
     Console.WriteLine(numbers[i]);
